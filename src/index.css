@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #838282;
+}
+.navbar h1 {
+  background: linear-gradient(to right bottom, #f1356d 10%, #ffa500 90%);
+  background-clip: text;
+  color: transparent;
+  cursor: default;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #f1356d;
+}
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.home .blog-preview {
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px;
+  border-bottom: 2px solid grey;
+  border-radius: 5px;
+  transition: all 0.4s ease-out;
+  cursor: default;
+}
+
+.home .blog-preview:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.home .blog-preview:hover {
+  box-shadow: 0 5px 10px rgba(34, 34, 34, 0.7);
+  transform: scale(1.05) translateY(-0.3rem);
+}
+
+.bloglist .heading {
+  margin: 0 0 1rem 7rem;
+}
+
+.blog-preview button {
+  background-color: #f1356d;
+  color: black;
+  font-size: 14px;
+  padding: 3px;
+  border-radius: 5px;
+  border: 1px solid orchid;
+  margin: 10px 0;
+  float: right;
+  cursor: pointer;
+}
+
+.blog-preview::after {
+  content: "";
+  display: table;
+  clear: both;
+}
